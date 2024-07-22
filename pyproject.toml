@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "std"
+version = "0.1.0"
+description = "A CLI tool to scan codebases for exposed secrets."
+authors = ["the laughing chicken <methuselahnwodobeh@gmail.com>"]
+readme = "README.md"
+packages = [{include = "std", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1.7"
+rich = "^13.7.1"
+tqdm = "^4.66.4"
+
+[tool.poetry.scripts]
+std = "std.cli:cli"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
