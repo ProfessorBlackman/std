@@ -3,9 +3,9 @@ name: Publish Python package
 on:
   push:
     branches:
-      - master  # Adjust this if you use a different default branch
+      - master
     tags:
-      - 'v*.*.*'  # Trigger on version tags like v1.0.0
+      - 'v[0-9]+.[0-9]+'
 
 jobs:
   publish:
@@ -18,7 +18,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
-          python-version: '3.x'  # Replace with the required Python version
+          python-version: '3.11'
 
       - name: Install dependencies
         run: |
