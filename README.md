@@ -15,13 +15,22 @@ Here is an example of a `README.md` file for your CLI app:
 
 ## Installation
 
-### Using Poetry
+### From PyPi
+```bash
+pip install std
+# OR
+poetry add std
+
+# after installation you can check to make sure it's installed properly by running the below command:
+std --help
+```
+### Building From Source
 
 Ensure you have [Poetry](https://python-poetry.org/) installed. Then, run the following commands:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/std.git
+git clone https://github.com/ProfessorBlackman/std.git
 cd std
 
 # Install dependencies
@@ -68,7 +77,7 @@ If you want to contribute or modify the tool, follow these steps to set up your 
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/std.git
+    git clone https://github.com/ProfessorBlackman/std.git
     cd std
     ```
 
@@ -100,7 +109,7 @@ This project uses the following libraries:
 
 ## Contact
 
-For any questions or suggestions, please contact [Your Name](mailto:you@example.com).
+For any questions or suggestions, please contact [Methuselah Nwodobeh](mailto:methuselahnwodobeh@gmail.com).
 ```
 
 ### Tips for Customization
